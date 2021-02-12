@@ -20,7 +20,6 @@ public class Solution {
         Output_Array(array4);
         Output_Array(array5);
         Output_Array(array6);
-
     }
 
     public static int[] Thanos_Sort(int[] mass) {
@@ -31,7 +30,6 @@ public class Solution {
     }
 
     public static void Sort_Part(int[] mass, int start, int end) {
-        //System.out.println("Curent indexes:" + start + " " + end);
         int sum = 0;
         double avg = 0.0;
         for (int i = start; i <= end; i++) {
@@ -52,8 +50,6 @@ public class Solution {
         for (int i = start; i <= end; i++) {
             mass[i] = tmp_mass[j++];
         }
-        //System.out.println("After sort");
-        //Output_Array(mass);
         int half = (end - start + 1) / 2;
         if (half != 0 && l != tmp_mass.length) {
             Sort_Part(mass, start, --l + (end - tmp_mass.length + 1));
